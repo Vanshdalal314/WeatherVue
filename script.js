@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cityName = cityInput.value.trim();
         cityInput.value = '';
         if(!cityName) return;
-        let Geocoding_url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`;
+        let Geocoding_url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`;
         fetch(Geocoding_url).then(res => res.json()).then(data => {
             let {name, lat, lon, country, state} = data[0];
             getWeatherdetails(name, lat, lon, country, state);
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showCitySuggestions(query) {
-        let searchUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${apiKey}`;
+        let searchUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${apiKey}`;
         fetch(searchUrl)
             .then(res => res.json())
             .then(data => {
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getUserCoordinates(){
         navigator.geolocation.getCurrentPosition(position => {
             let {latitude, longitude} = position.coords;
-            let rev_geocoding_url = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+            let rev_geocoding_url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
             fetch(rev_geocoding_url).then(res => res.json()).then(data => {
                 let {name, country, state} = data[0];
                 getWeatherdetails(name, latitude, longitude, country, state);
