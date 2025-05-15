@@ -33,5 +33,8 @@ A simple and responsive weather application built using **HTML**, **CSS**, and *
 
 4. Done! Search for any city to view weather details.
 
+## 🌐 Check it Live Now !
+
+- 🔗 [Click here](https://weathervue-1hfh.onrender.com/)
 
 Let me know if you'd like it customized with your repo URL or want a deployment section for GitHub Pages!
