@@ -18,23 +18,24 @@ A simple and responsive weather application built using **HTML**, **CSS**, and *
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository:
+1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/Vanshdalal314/WeatherVue
-````
+   ```
 
-2. Open `index.html` in your browser.
+2. **Open** `index.html` **in your browser.**
 
-3. Add your OpenWeatherMap API key in the JavaScript file:
+3. **Insert your OpenWeatherMap API key** in the JavaScript file:
 
    ```js
    const apiKey = "YOUR_API_KEY";
    ```
 
-4. Done! Search for any city to view weather details.
+4. **Done!** Now you can search for any city to view its current weather details.
 
-## 🌐 Check it Live Now !
+## 🌐 Live Demo
 
-- 🔗 [Click here](https://weathervue-1hfh.onrender.com/)
+* 🔗 [Click here to try it out](https://weathervue-1hfh.onrender.com/)
 
-Let me know if you'd like it customized with your repo URL or want a deployment section for GitHub Pages!
+
